@@ -13,7 +13,7 @@ function destructivelyRemoveFirstCat(){
     cats.shift("Milo");
 }
 function appendCat(){
-    const newCatsArray=cats.concat("Broom");
+    const newCatsArray=[...cats,"Broom"];
     return newCatsArray;
 }
 function prependCat(){
